@@ -17,7 +17,7 @@
 $$\sum_{i=1}^{3}{X_{i}W_{i}}$$
 来表示当前感知器获得的输入。 对应的我们需要根据这些输入知道感知器该有什么输出。因此我们需要一个阈值对输入进行判断，又由于我们只想知道当前输入是否要触发感知器作出反应，所以我们将输出表示为0或1两种值，对应的就是不触发输出和触发输出。因此这个感知器可以表示为
 $$output = \left\{\begin{matrix}
- & 0 & if &\sum_{i=1}^{3}{X_{i}W_{i}} <= threshold \\ 
+ & 0 & if &\sum_{i=1}^{3}{X_{i}W_{i}} < threshold \\ 
  & 1 & if &\sum_{i=1}^{3}{X_{i}W_{i}} > threshold
 \end{matrix}\right.$$
 
@@ -39,7 +39,7 @@ $$output = \left\{\begin{matrix}
 $$b=-threshold$$
 这样上式就变成了
 $$output = \left\{\begin{matrix}
- & 0 &  if &\sum_{i=1}^{3}{X_{i}W_{i}} + b <= 0 \\ 
+ & 0 &  if &\sum_{i=1}^{3}{X_{i}W_{i}} + b < 0 \\ 
  & 1 & if &\sum_{i=1}^{3}{X_{i}W_{i}} + b > 0
 \end{matrix}\right.$$
 
@@ -48,7 +48,7 @@ $$x\cdot w\equiv \sum_{i=1}^{n}{X_{i}W_{i}}$$
 
 感知器的判断公式就进一步变成了
 $$output = \left\{\begin{matrix}
- & 0 & if  &x\cdot w + b <= 0 \\ 
+ & 0 & if  &x\cdot w + b < 0 \\ 
  & 1 & if  &x\cdot w + b > 0
 \end{matrix}\right.$$
 
