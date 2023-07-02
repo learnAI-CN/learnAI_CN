@@ -4,7 +4,7 @@ nav:
     - 简介: 'intro.md'
     - 入门:
       - OpenGL: '01 Getting started/01 OpenGL.md'
-      - 创建窗口: '01 Getting started/02 Creating a window.md'
+      - 感知机: '01 Getting started/Perceptron.md'
       - 你好，窗口: '01 Getting started/03 Hello Window.md'
       - 你好，三角形: '01 Getting started/04 Hello Triangle.md'
       - 着色器: '01 Getting started/05 Shaders.md'
